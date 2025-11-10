@@ -100,7 +100,7 @@ You can customize the system by:
 - Adding new categories and tools
 - Extending functionality through modules
 
-## Amdmin Login
+## Admin Login
 - username : admin
 - password : admin123
 
