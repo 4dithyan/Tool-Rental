@@ -104,6 +104,9 @@ You can customize the system by:
 - username : admin
 - password : admin123
 
+## User Login
+- Register new customer and login
+
 ## License
 
 This project is for educational purposes. Feel free to modify and extend it according to your needs.
