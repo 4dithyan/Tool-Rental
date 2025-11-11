@@ -1,0 +1,5 @@
+This is a placeholder file. 
+Replace this with your actual background images.
+Suggested filenames:
+- login-bg.jpg
+- register-bg.jpg
