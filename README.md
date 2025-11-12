@@ -85,6 +85,13 @@ The database schema is defined in `tool_kart.sql`. Import this file into your My
 - Report generation
 - Settings configuration
 
+### Admin Login
+username : admin
+password : admin123
+
+### Customer Login
+Register as new customer and login as username & password
+
 ## Security Features
 - Password hashing
 - Session management
@@ -105,5 +112,6 @@ You can customize the system by:
 This project is for educational purposes. Feel free to modify and extend it according to your needs.
 
 ## Support
+
 
 For issues and feature requests, please create an issue in the repository.
