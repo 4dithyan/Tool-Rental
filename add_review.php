@@ -11,7 +11,7 @@ $user_id = $_SESSION['user_id'];
 $error_message = '';
 $success_message = '';
 
-// Check if rental_id is provided
+
 if (!isset($_GET['rental_id']) || !is_numeric($_GET['rental_id'])) {
     header('Location: user_dashboard.php');
     exit();
@@ -277,5 +277,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+
 
 <?php include 'includes/footer.php'; ?>
