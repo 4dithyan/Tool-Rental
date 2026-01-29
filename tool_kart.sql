@@ -198,6 +198,21 @@ INSERT INTO `rentals` (`rental_id`, `user_id`, `tool_id`, `rental_date`, `rental
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `rental_logs`
+--
+
+CREATE TABLE `rental_logs` (
+  `log_id` int(11) NOT NULL,
+  `rental_id` int(11) NOT NULL,
+  `action` enum('created','modified','returned','cancelled','overdue') NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `timestamp` datetime NOT NULL,
+  `details` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `reviews`
 --
 
@@ -389,6 +404,14 @@ ALTER TABLE `rentals`
   ADD KEY `idx_id_proof_image` (`id_proof_image`);
 
 --
+-- Indexes for table `rental_logs`
+--
+ALTER TABLE `rental_logs`
+  ADD PRIMARY KEY (`log_id`),
+  ADD KEY `rental_id` (`rental_id`),
+  ADD KEY `user_id` (`user_id`);
+
+--
 -- Indexes for table `reviews`
 --
 ALTER TABLE `reviews`
@@ -454,6 +477,12 @@ ALTER TABLE `rentals`
   MODIFY `rental_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
+-- AUTO_INCREMENT for table `rental_logs`
+--
+ALTER TABLE `rental_logs`
+  MODIFY `log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
 -- AUTO_INCREMENT for table `reviews`
 --
 ALTER TABLE `reviews`
@@ -501,6 +530,13 @@ ALTER TABLE `notifications`
 ALTER TABLE `rentals`
   ADD CONSTRAINT `rentals_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE CASCADE,
   ADD CONSTRAINT `rentals_ibfk_2` FOREIGN KEY (`tool_id`) REFERENCES `tools` (`tool_id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `rental_logs`
+--
+ALTER TABLE `rental_logs`
+  ADD CONSTRAINT `rental_logs_ibfk_1` FOREIGN KEY (`rental_id`) REFERENCES `rentals` (`rental_id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `rental_logs_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `reviews`
