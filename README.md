@@ -115,3 +115,6 @@ For issues and feature requests, please create an issue in the repository.
 ## Home Page 
 <img width="1901" height="920" alt="Home Page" src="https://github.com/user-attachments/assets/d167b7c8-6dc4-4559-8b96-0551e2093f9c" />
 
+## Admin Dashboard
+<img width="1023" height="925" alt="Admin Dashboard" src="https://github.com/user-attachments/assets/676b81a4-f646-4e8c-9fcf-05593e1572ec" />
+
