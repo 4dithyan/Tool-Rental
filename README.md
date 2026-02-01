@@ -100,7 +100,6 @@ Register as new customer and login as username & password
 - Role-based access control
 
 ## Customization
-
 You can customize the system by:
 - Modifying the appearance in `assets/css/style.css`
 - Updating settings in the admin panel
@@ -108,10 +107,11 @@ You can customize the system by:
 - Extending functionality through modules
 
 ## License
-
 This project is for educational purposes. Feel free to modify and extend it according to your needs.
 
 ## Support
-
-
 For issues and feature requests, please create an issue in the repository.
+
+## Home Page 
+<img width="1901" height="920" alt="Home Page" src="https://github.com/user-attachments/assets/d167b7c8-6dc4-4559-8b96-0551e2093f9c" />
+
